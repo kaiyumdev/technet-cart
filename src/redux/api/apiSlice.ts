@@ -17,6 +17,9 @@ export const api = createApi({
         body: data,
       }),
     }),
+    getComment: builder.query({
+      query: (id) => `/comment/${id}`,
+    }),
   }),
 });
 

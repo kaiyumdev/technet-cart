@@ -25,6 +25,7 @@ export default function ProductReview({ id }: IProps) {
   console.log(isError);
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    console.log(inputValue);
     const options = {
       id: id,
       data: { comment: inputValue },
