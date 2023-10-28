@@ -14,11 +14,11 @@ const productApi = api.injectEndpoints({
         method: 'POST',
         body: data,
       }),
-      invalidatesTags: ['cmments'],
+      invalidatesTags: ['comments'],
     }),
     getComment: builder.query({
       query: (id) => `/comment/${id}`,
-      providesTags: ['cmments'],
+      providesTags: ['comments'],
     }),
   }),
 });
